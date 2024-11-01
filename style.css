@@ -21,30 +21,53 @@ html{
     background-color: #ddd;
 }
 
-.Navbar{
-    background: transparent;
-    padding: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: black;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-.Navbar__Items{
+.Navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 60px;
+    background-color: rgba(255, 255, 255, 0.9); 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+.logo i {
+    font-size: 1.8rem;
+    color: #333;
 }
 
-.Navbar__link{
-    padding-right: 20px;
+.Navbar__Items {
+    display: flex;
+    gap: 25px;
+    align-items: center;
 }
 
-#imgIPC{
-    display: inline;
-    justify-content: left;
+.Navbar__link {
+    color: #333;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 2px;
+    margin-left: 50px; 
+    transition: color 0.3s ease;
 }
 
-#church{
-    padding-right: 20px;
+.Navbar__link:hover {
+    color: #0078FF; 
+}
+.slide-box {
+    min-width: 1%; 
+    position: relative; 
+    overflow: hidden; 
+}
+
+.slide-box img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    display: block; 
 }
 
 #mapa-titulo{
@@ -54,40 +77,107 @@ html{
 
 #mapa{
     margin: 20px 0px 0px 500px;
+    padding: 30px;
 }
 
-.container{
-    width: 80%;
-    margin: 50px 150px 0 240px;
+#manual-btn{
+    opacity: 0.5;
 }
 
-.infos{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+.container {
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 20px; 
 }
 
-.infos-card{
-    background-color: gray;
-    border: 1px solid #ddd;
+.infos {
+    display: flex; 
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+}
+
+.infos-card {
+    background-color: #f9f9f9; 
     border-radius: 8px;
-    padding: 15px;
-    width: 230px;
-    height: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    padding: 20px;
+    flex: 1 1 30%; 
+    margin: 10px; 
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.infos-card h2{
-    font-size: 18px;
-    margin: 10px 0;
+.infos-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
 }
 
-.infos-card p{
-    margin: 0 0 10px;
+.infos-card h2 {
+    color: #0078FF; 
+    font-family: 'Arial', sans-serif; 
+    margin-bottom: 10px; 
 }
 
+.infos-card p {
+    color: #555;
+    font-size: 0.95rem;
+    margin-bottom: 10px; 
+}
+
+.link-clique {
+    display: inline-block; 
+    margin-top: 10px; 
+    padding: 10px 15px; 
+    background-color: #0078FF; 
+    color: #fff; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
+}
+
+.link-clique:hover {
+    background-color: #0056b3; 
+}
 #historia, #eventos, #hr-culto{
-    color: whitesmoke;
+    color: black;
     text-align: center;
     font-weight: bold;
     font-size: 25px;
+}
+.mapa-titulo{
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 30px; 
+    margin-bottom: 20px;
+    text-align: center;
+}
+footer {
+    background-color: #333;
+    color: #fff; 
+    text-align: center;
+    padding: 20px 0; 
+    position: relative; 
+    bottom: 0;
+    width: 100%; 
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+.footer-content p {
+    margin: 5px 0; 
+}
+
+.footer-content a {
+    color: #fff; 
+    text-decoration: none; 
+    transition: color 0.3s; 
+}
+
+.footer-content a:hover {
+    color: #0078FF; 
 }
