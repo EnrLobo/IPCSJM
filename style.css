@@ -1,10 +1,16 @@
+<<<<<<< HEAD
 /* Zerando o CSS padrão da página */
+=======
+>>>>>>> 6465142514ed08bf67fdab67e6dc10b83914a82e
 *{
     padding: 0px;
     margin: 0px;
 }
 
+<<<<<<< HEAD
 /* Estilização da scrollbar */
+=======
+>>>>>>> 6465142514ed08bf67fdab67e6dc10b83914a82e
 *::-webkit-scrollbar {
     width: 12px;
   }
@@ -18,42 +24,69 @@
     border-radius: 20px;
     border: 3px solid gray;
   }
+<<<<<<< HEAD
 /* Cor de fundo da página */
+=======
+
+>>>>>>> 6465142514ed08bf67fdab67e6dc10b83914a82e
 html{
     background-color: #ddd;
 }
 
+<<<<<<< HEAD
 /* Barra de navegação */
+=======
+>>>>>>> 6465142514ed08bf67fdab67e6dc10b83914a82e
 .Navbar {
     position: fixed;
     top: 0;
     width: 100%;
     display: flex;
     align-items: center;
+<<<<<<< HEAD
     /* justify-content: center; */
     padding: 20px 60px;
     background-color: rgba(255, 255, 255, 0.7); 
+=======
+    justify-content: center;
+    padding: 20px 60px;
+    background-color: rgba(255, 255, 255, 0.9); 
+>>>>>>> 6465142514ed08bf67fdab67e6dc10b83914a82e
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 100;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6465142514ed08bf67fdab67e6dc10b83914a82e
 .Navbar__Items {
     display: flex;
     gap: 25px;
     align-items: center;
 }
 
+<<<<<<< HEAD
 a{
+=======
+.Navbar__link {
+>>>>>>> 6465142514ed08bf67fdab67e6dc10b83914a82e
     color: #333;
     font-size: 1rem;
     text-decoration: none;
     font-weight: 600;
+<<<<<<< HEAD
+=======
+    padding: 2px;
+    margin-left: 50px; 
+>>>>>>> 6465142514ed08bf67fdab67e6dc10b83914a82e
     transition: color 0.3s ease;
 }
 
 .Navbar__link:hover {
     color: #0078FF; 
 }
+<<<<<<< HEAD
 
 /* Mapa do Google */
 .map{
@@ -80,6 +113,35 @@ a{
 }
 
 /* Cards */
+=======
+.slide-box {
+    min-width: 1%; 
+    position: relative; 
+    overflow: hidden; 
+}
+
+.slide-box img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    display: block; 
+}
+
+#mapa-titulo{
+    margin-top: 20px;
+    text-align: center;
+}
+
+#mapa{
+    margin: 20px 0px 0px 500px;
+    padding: 30px;
+}
+
+#manual-btn{
+    opacity: 0.5;
+}
+
+>>>>>>> 6465142514ed08bf67fdab67e6dc10b83914a82e
 .container {
     max-width: 1200px; 
     margin: 0 auto;
@@ -134,14 +196,30 @@ a{
 .link-clique:hover {
     background-color: #0056b3; 
 }
+<<<<<<< HEAD
 .title-card{
+=======
+#historia, #eventos, #hr-culto{
+>>>>>>> 6465142514ed08bf67fdab67e6dc10b83914a82e
     color: black;
     text-align: center;
     font-weight: bold;
     font-size: 25px;
 }
+<<<<<<< HEAD
 
 /* Rodapé */
+=======
+.mapa-titulo{
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 30px; 
+    margin-bottom: 20px;
+    text-align: center;
+}
+>>>>>>> 6465142514ed08bf67fdab67e6dc10b83914a82e
 footer {
     background-color: #333;
     color: #fff; 
