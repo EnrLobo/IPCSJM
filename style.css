@@ -3,11 +3,31 @@
     margin: 0px;
 }
 
-.Navbar{
+*::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  *::-webkit-scrollbar-track {
     background: gray;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: rgb(187, 187, 187);
+    border-radius: 20px;
+    border: 3px solid gray;
+  }
+
+html{
+    background-color: #ddd;
+}
+
+.Navbar{
+    background: transparent;
     padding: 16px;
-    font-family: 'Times New Roman', Times, serif;
-    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .Navbar__Items{
@@ -16,6 +36,11 @@
 
 .Navbar__link{
     padding-right: 20px;
+}
+
+#imgIPC{
+    display: inline;
+    justify-content: left;
 }
 
 #church{
@@ -28,12 +53,12 @@
 }
 
 #mapa{
-    margin: 20px 0px 0px 450px;
+    margin: 20px 0px 0px 500px;
 }
 
 .container{
     width: 80%;
-    margin: 30px 140px 0 180px;
+    margin: 50px 150px 0 240px;
 }
 
 .infos{
@@ -58,4 +83,11 @@
 
 .infos-card p{
     margin: 0 0 10px;
+}
+
+#historia, #eventos, #hr-culto{
+    color: whitesmoke;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
 }
