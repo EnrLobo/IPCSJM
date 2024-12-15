@@ -1,0 +1,84 @@
+footer {
+    background-color: rgba(192, 189, 189, 0.7);
+    color: rgb(73, 71, 71);
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    padding: 20px 45px 0 45px;
+    flex-wrap: wrap; 
+    font-size: 1rem;
+}
+
+.container-footer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 100px ;
+    place-items: center;
+}
+
+.copyR {
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    font-size: 0.9rem;
+    color: #3e3e3e;
+}
+
+.contato {
+    text-align: left;
+    flex: 1; 
+    margin-right: 15px;
+}
+
+.contato a:hover{
+    color: #0078FF;
+    transition: color 0.3s ease;
+}
+
+.contato a{
+    color: rgb(73, 71, 71);
+    text-decoration: none;
+}
+
+.contato p, h2, .face, .insta, .email{
+    margin-bottom: 8px;
+}
+
+.conteudo {
+    text-align: center; 
+    flex: 0.2;
+    margin-left: 15px;
+}
+
+.conteudo div { 
+    margin: 10px 10px;
+}
+
+.conteudo a{
+    text-decoration: none;
+    color: rgb(73, 71, 71);
+}
+
+.conteudo a:hover {
+    color: #0078FF;
+    transition: color 0.3s ease;
+}
+
+.navegation-footer{
+    text-align: center;
+}
+
+.navegation-footer div{
+    margin: 10px 10px;
+}
+
+.navegation-footer a{
+    text-decoration: none;
+    color: rgb(73, 71, 71);
+}
+
+.navegation-footer a:hover{
+    color: #0078FF;
+    transition: color 0.3s ease;   
+}

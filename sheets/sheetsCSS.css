@@ -1,0 +1,24 @@
+.hora-culto {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+}
+
+.hora-culto h2 {
+    margin-bottom: 20px; 
+    font-weight: bold;
+}
+
+.table {
+    width: 50%;
+    background-color: whitesmoke;
+}
+
+th, td{
+    text-align: center;
+}
+
+.custom-blue-header {
+    background-color: #52a1f7; 
+    color: white; 
+}
