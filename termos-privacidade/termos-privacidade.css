@@ -1,23 +1,8 @@
-/* Zerando o CSS padrão da página */
 *{
     padding: 0px;
     margin: 0px;
 }
 
-/* Estilização da scrollbar */
-*::-webkit-scrollbar {
-    width: 12px;
-  }
-  
-  *::-webkit-scrollbar-track {
-    background: gray;
-  }
-  
-  *::-webkit-scrollbar-thumb {
-    background-color: rgb(187, 187, 187);
-    border-radius: 20px;
-    border: 3px solid gray;
-  }
 /* Cor de fundo da página */
 html{
     background-color: #ddd;
@@ -25,13 +10,13 @@ html{
 
 /* Barra de navegação */
 .Navbar {
-    position: fixed;
+    /* position: fixed; */
     top: 0;
-    width: 100%;
+    width: 99.5%;
     display: flex;
     align-items: center;
-    padding: 5px 5px 0px 30px;
-    background-color: rgba(255, 255, 255, 0.4); 
+    padding: 5px 0px 0px 5px;
+    background-color: rgba(255, 255, 255, 1); 
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 100;
 }
@@ -65,95 +50,35 @@ a{
     font-weight: bold;
 }
 
-/* Mapa do Google */
-.map{
-    text-align: center;
-    margin-bottom: 20px;
-}
+/*Termos e Condições*/
 
-.map h1{
-    padding-bottom: 10px;
-}
-
-.map iframe{
-    width: 50%;
-}
-
-.mapa-titulo{
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: center; 
-    padding: 30px; 
-    margin-bottom: 20px;
+.terms{
+    margin: 15px 150px 30px 150px;
     text-align: center;
 }
 
-/* Cards */
-.container {
-    max-width: 1200px; 
-    margin: 0 auto;
-    padding: 20px; 
+.title-terms{
+    font-size: 30px;
+    margin-bottom: 25px;
 }
 
-.infos {
-    display: flex; 
-    justify-content: space-between; 
-    flex-wrap: wrap; 
+.term-item{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: rgb(249, 249, 249);
+    width: 900px;
+    margin: 15px;
+    margin-left: 140px; 
 }
 
-.infos-card {
-    background-color: #f9f9f9; 
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
-    padding: 20px;
-    flex: 1 1 30%; 
-    margin: 10px; 
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.infos-card:hover {
-    transform: translateY(-5px); 
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
-}
-
-.infos-card h2 {
-    color: #0078FF; 
-    font-family: 'Arial', sans-serif; 
-    margin-bottom: 10px; 
-}
-
-.infos-card p {
-    color: #555;
-    font-size: 0.95rem;
-    margin-bottom: 10px; 
-}
-
-.infos-card a{
-    text-decoration: none;
-    color: #fff;
-}
-
-.link-clique {
-    display: inline-block; 
-    margin-top: 10px; 
-    padding: 10px 15px; 
-    background-color: #0078FF; 
-    color: #fff; 
-
-    border-radius: 5px; 
-    transition: background-color 0.3s; 
-}
-
-.link-clique:hover {
-    background-color: #0056b3; 
-}
-.title-card{
-    color: black;
-    text-align: center;
-    font-weight: bold;
+.term-item h3{
     font-size: 25px;
+    padding: 10px;
+}
+
+.term-item p, .term-item a{
+    font-size: 20px;
 }
 
 /*Footer*/
