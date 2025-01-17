@@ -3,58 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/79d1cf8020.js" crossorigin="anonymous">
     <link rel="stylesheet" href="secondary.css">
-    <title>Eventos</title>
+    <link rel="stylesheet" href="/IPCSJM/secondary/eventos.css">
+    <title>Eventos - Igreja Presbiteriana Conservadora do Brasil</title>
 </head>
 <body>
+    <header>
+        <h1>Eventos</h1>
+    </header>
+    
+    <main>
+        <section class="events-section">
+            <h1>Eventos</h1>
+            <div id="events-container" class="events-container">
+                <!-- Os cartões de eventos serão gerados aqui -->
+            </div>
+        </section>
+    </main>
+
     <footer>
         <div class="container-footer">
             <div class="contato">
                 <h2>Contatos</h2>
-                <p>
-                    <div class="face">
-                        <i class="fa-brands fa-square-facebook"></i>
-                        <a href="#">Facebook</a>
-                    </div>
-                    <div class="insta">
-                        <i class="fa-brands fa-instagram"></i>
-                        <a href="#">Instagram</a>
-                    </div>
-                    <div class="email">
-                        <i class="fa-solid fa-square-envelope"></i>
-                        <a href="#">E-mail</a>
-                    </div>
-                </p>
+                <div class="face">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <a href="#">Facebook</a>
+                </div>
+                <div class="insta">
+                    <i class="fa-brands fa-instagram"></i>
+                    <a href="#">Instagram</a>
+                </div>
+                <div class="email">
+                    <i class="fa-solid fa-square-envelope"></i>
+                    <a href="#">E-mail</a>
+                </div>
             </div>
+
             <div class="navegation-footer">
-               <div>
-                    <a href="../index.html">Home</a>
-                </div>
-                <div>
-                    <a href="eventos.html">Eventos</a>
-                </div>
-                <div>
-                    <a href="nossaHistoria.html">Nossa História</a>
-                </div>
-                <div>
-                    <a href="about.html">Sobre Nós</a>
-                </div>
+                <div><a href="../index.html">Home</a></div>
+                <div><a href="eventos.html">Eventos</a></div>
+                <div><a href="nossaHistoria.html">Nossa História</a></div>
+                <div><a href="about.html">Sobre Nós</a></div>
             </div>
+
             <div class="conteudo">
-                <div>
-                    <a href="#">Política de Privacidade</a>
-                </div>
-                <div>
-                    <a href="#">Termos de Uso</a>
-                </div>
-                <div>
-                    <a href="#">Nossa Missão</a>
-                </div>
+                <div><a href="#">Política de Privacidade</a></div>
+                <div><a href="#">Termos de Uso</a></div>
+                <div><a href="#">Nossa Missão</a></div>
             </div>
         </div>
+        
         <div class="copyR">
             <p>&copy; 2024 Igreja Presbiteriana Conservadora do Brasil. Todos os direitos reservados.</p>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const eventsContainer = document.getElementById('events-container');
+
+            const eventsData = [
+                {
+                    title: "Culto Encerração do Ano de 2024",
+                    description: "Finalizando ano da melhor maneira.",
+                   // image: "/IPCSJM/secondary/images/WhatsApp_Image_2025-01-16_at_20.19.55.jpg",
+                    date: "31/12/2024"
+                },
+                {
+                    title: "Casamento",
+                    description: "Os noivos convidam a todos para celebração da cerimonia",
+                    //image: "/IPCSJM/secondary/images/WhatsApp_Image_2025-01-16_at_20.19.00.jpg",
+                    date: "18/01/2025"
+                },
+                {
+                    title: "Culto de Quarta",
+                    description: "Venha participar do nosso culto semanal",
+                   // image: "/IPCSJM/secondary/images/WhatsApp_Image_2025-01-16_at_20.18.27_2.jpg",
+                    date: "08/01/2025"
+                }
+            ];
+
+            eventsData.forEach(event => {
+                const { title, description, image, date } = event;
+
+                if (!title || !image || !date) {
+                    console.error('Evento inválido:', event);
+                    return;
+                }
+
+                const eventCard = document.createElement('div');
+                eventCard.classList.add('event-card');
+
+                eventCard.innerHTML = `
+                    <img src="${image}" alt="Imagem do evento ${title}" onerror="this.src='/IPCSJM/secondary/images/default-placeholder.png';">
+                    <h2>${title}</h2>
+                    <p>${description || 'Descrição não disponível.'}</p>
+                    <span>${date}</span>
+                `;
+
+                eventsContainer.appendChild(eventCard);
+            });
+        });
+    </script>
 </body>
 </html>
