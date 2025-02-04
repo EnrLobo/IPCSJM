@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://kit.fontawesome.com/79d1cf8020.js" crossorigin="anonymous">
-    <link rel="stylesheet" href="secondary.css">
-    <link rel="stylesheet" href="/IPCSJM/secondary/eventos.css">
+    <link rel="stylesheet" href="/secondary/secondary.css">
+    <link rel="stylesheet" href="/secondary/eventos.css">
     <title>Eventos - Igreja Presbiteriana Conservadora do Brasil</title>
 </head>
 <body>
@@ -15,9 +15,27 @@
     
     <main>
         <section class="events-section">
-            <h1>Eventos</h1>
+            <h1>Eventos Recentes</h1>
             <div id="events-container" class="events-container">
-                <!-- Os cartões de eventos serão gerados aqui -->
+                <!-- Cartões de eventos -->
+                <div class="event-card">
+                    <img src="/images/WhatsApp-Image-2025-01-16-at-20.19.55.jpg" alt="Imagem do evento Culto Encerração do Ano de 2024">
+                    <h2>Culto Encerração do Ano de 2024</h2>
+                    <p>Finalizando o ano da melhor maneira.</p>
+                    <span>31/12/2024</span>
+                </div>
+                <div class="event-card">
+                    <img src="/images/WhatsApp-Image-2025-01-16-at-20.19.00.jpg" alt="Imagem do evento Casamento">
+                    <h2>Casamento</h2>
+                    <p>Os noivos convidam a todos para celebração da cerimônia.</p>
+                    <span>18/01/2025</span>
+                </div>
+                <div class="event-card">
+                    <img src="/images/WhatsApp-Image-2025-01-16-at-20.18.27-_2_.jpg" alt="Imagem do evento Culto de Quarta">
+                    <h2>Culto de Quarta</h2>
+                    <p>Venha participar do nosso culto semanal.</p>
+                    <span>08/01/2025</span>
+                </div>
             </div>
         </section>
     </main>
@@ -58,53 +76,5 @@
             <p>&copy; 2024 Igreja Presbiteriana Conservadora do Brasil. Todos os direitos reservados.</p>
         </div>
     </footer>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const eventsContainer = document.getElementById('events-container');
-
-            const eventsData = [
-                {
-                    title: "Culto Encerração do Ano de 2024",
-                    description: "Finalizando ano da melhor maneira.",
-                   // image: "/IPCSJM/secondary/images/WhatsApp_Image_2025-01-16_at_20.19.55.jpg",
-                    date: "31/12/2024"
-                },
-                {
-                    title: "Casamento",
-                    description: "Os noivos convidam a todos para celebração da cerimonia",
-                    //image: "/IPCSJM/secondary/images/WhatsApp_Image_2025-01-16_at_20.19.00.jpg",
-                    date: "18/01/2025"
-                },
-                {
-                    title: "Culto de Quarta",
-                    description: "Venha participar do nosso culto semanal",
-                   // image: "/IPCSJM/secondary/images/WhatsApp_Image_2025-01-16_at_20.18.27_2.jpg",
-                    date: "08/01/2025"
-                }
-            ];
-
-            eventsData.forEach(event => {
-                const { title, description, image, date } = event;
-
-                if (!title || !image || !date) {
-                    console.error('Evento inválido:', event);
-                    return;
-                }
-
-                const eventCard = document.createElement('div');
-                eventCard.classList.add('event-card');
-
-                eventCard.innerHTML = `
-                    <img src="${image}" alt="Imagem do evento ${title}" onerror="this.src='/IPCSJM/secondary/images/default-placeholder.png';">
-                    <h2>${title}</h2>
-                    <p>${description || 'Descrição não disponível.'}</p>
-                    <span>${date}</span>
-                `;
-
-                eventsContainer.appendChild(eventCard);
-            });
-        });
-    </script>
 </body>
 </html>
