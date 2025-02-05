@@ -1,60 +1,68 @@
-
+/* Estilos Gerais */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
+    background-color: #ddd; /* Fundo atualizado */
     color: #333;
     line-height: 1.6;
 }
 
+/* Cabeçalho */
 header {
-    background-color: #003366;
+    background-color: rgba(255, 255, 255, 0.4); /* Fundo translúcido */
     padding: 55px 20px;
 }
 
+/* Navbar */
 .Navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+/* Links da Navbar */
 .Navbar__Items {
     display: flex;
 }
 
 .Navbar__link a {
-    color: white;
+    color: #333; /* Azul vibrante */
     text-decoration: none;
     margin: 0 15px;
     padding: 10px 15px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: bold;
 }
 
 .Navbar__link a:hover {
     background-color: #00509e;
     border-radius: 5px;
+    color: #fff;
 }
 
+/* Logo */
 #imgIPC img {
     max-height: 100px;
 }
 
+/* Conteúdo Principal */
 main {
     padding: 20px;
 }
 
+/* Seção Sobre */
 .about-section {
     max-width: 800px;
     margin: 20px auto;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    background: #f9f9f9; /* Fundo mais suave */
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 25px;
 }
 
 .about-section h1 {
-    color: #003366;
+    color: #0078FF; /* Azul vibrante */
     margin-bottom: 15px;
     text-align: center;
 }
@@ -62,8 +70,10 @@ main {
 .about-section p {
     margin-bottom: 15px;
     text-align: justify;
+    color: #555; /* Cinza médio */
 }
 
+/* Lista de itens */
 .about-section ul {
     list-style: none;
     padding: 0;
@@ -71,23 +81,25 @@ main {
 
 .about-section ul li {
     margin-bottom: 10px;
-    padding-left: 20px;
+    padding-left: 25px;
     position: relative;
+    font-weight: bold;
 }
 
 .about-section ul li::before {
     content: '✔';
     position: absolute;
     left: 0;
-    color: #003366;
+    color: #0078FF; /* Azul vibrante */
 }
 
-
+/* Rodapé */
 footer {
-    background-color: #003366;
-    color: white;
+    background-color: rgba(192, 189, 189, 0.7); /* Cinza translúcido */
+    color: #333;
     text-align: center;
-    padding: 10px 0;
+    padding: 15px 0;
+    font-weight: bold;
     margin-top: 20px;
 }
 
