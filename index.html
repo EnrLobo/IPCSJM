@@ -18,11 +18,16 @@
 <body>
     <header>
         <div class="Navbar">
-            <nav class="Navbar__Items">
+            <nav class="Navbar__Items" id="items-menu">
                 <div id="imgIPC">
                      <img src="images/LogoIPC.png" alt="Logo IPC">
                     <link rel="stylesheet" href="#">
                 </div>
+                
+                <div class="burguer" onclick="clickMenu()">
+                    <i id="hamburguer" class="fa-solid fa-bars"></i>
+                </div>
+
                 <div class="Navbar__link">
                     <a href="#teste-table">Cultos</a>
                 </div>
@@ -35,11 +40,12 @@
                 <div class="Navbar__link">
                     <a href="secondary/about.html">Sobre Nós</a>
                 </div>
-            </nav>
+                </nav>
         </div>
     </header>
     <section class="slider">
         <div class="slider-content">
+            
             <input type="radio" name="btn-radio" id="radio1">
             <input type="radio" name="btn-radio" id="radio2">
             <input type="radio" name="btn-radio" id="radio3">
@@ -61,12 +67,6 @@
                 <div class="auto-btn1"></div>
                 <div class="auto-btn2"></div>
                 <div class="auto-btn3"></div>
-            </div>
-
-            <div class="nav-manual">
-                <label for="radio1" class="manual-btn"></label>
-                <label for="radio2" class="manual-btn"></label>
-                <label for="radio3" class="manual-btn"></label>
             </div>
         </div>
     </section>
@@ -139,14 +139,14 @@
                 <div>
                     <a href="secondary/nossaHistoria.html">Nossa História</a>
                 </div>
+            
+            </div>
+            <div class="conteudo">
+
                 <div>
                     <a href="secondary/about.html">Sobre Nós</a>
                 </div>
-            </div>
-            <div class="conteudo">
-                <div>
-                    <a href="#">Nossa Missão</a>
-                </div>
+
                 <div>
                     <a href="visao-valores/visao-valores.html">Visão e Valores</a>
                 </div>
@@ -164,5 +164,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="sheets/scricptsheets.js"></script>
     <script src="Slide/slide.js"></script>
+    <script src="menu.js"></script>
 </body>
 </html>
