@@ -106,3 +106,77 @@ footer {
 footer p {
     margin: 0;
 }
+
+
+@media (min-width: 600px){
+    .burguer{
+        display: none;
+    }
+}
+
+@media (max-width: 600px){
+    .Navbar__link{
+        display: none;
+    }
+}
+
+.burguer:hover{
+    color: #0078FF;
+}
+
+@media (max-width: 500px) {
+    .Navbar__Items {
+        display: none;
+        width: 100%;
+        left: 0;
+        padding: 10px 0;
+    }
+    .Navbar__Items.active {
+        display: flex;
+    }
+    .hamburger {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 600px) {
+    .Navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .Navbar__Items {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    .Navbar img {
+        width: 90px;
+        height: auto;
+    }
+    .Navbar a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-footer {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        place-items: center;
+        text-align: center;
+    }
+
+    .contato{
+        text-align: center;
+    }
+
+    .contato, .conteudo, .navegation-footer {
+        margin: 10px 0;
+    }
+}
+
+
+

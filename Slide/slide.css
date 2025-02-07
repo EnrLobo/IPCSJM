@@ -38,7 +38,6 @@ section.slider{
 }
 
 .nav-manual .manual-btn, .nav-auto div{
-    border: 1px solid white;
     padding: 6px;
     border-radius: 50%;
     cursor: pointer;
@@ -53,9 +52,7 @@ section.slider{
     background: rgb(48, 48, 48);
 }
 
-#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3{
-    background: white;
-}
+
 
 #radio1:checked ~ .primeiro{
     margin-left: 0%;
