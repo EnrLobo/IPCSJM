@@ -3,14 +3,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ddd; /* Fundo atualizado */
-    color: #333; 
+    background-color: #ddd;
+    color: #333;
 }
 
 /* Cabeçalho */
 header {
-    background-color: rgba(255, 255, 255, 0.4); /* Fundo translúcido */
-    color: #0078FF; /* Azul vibrante */
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #0078FF;
     padding: 20px;
     text-align: center;
     font-weight: bold;
@@ -27,7 +27,7 @@ header {
 .events-section h1 {
     text-align: center;
     margin-bottom: 20px;
-    color: #0078FF; /* Azul vibrante */
+    color: #0078FF;
 }
 
 /* Container de Eventos */
@@ -40,12 +40,13 @@ header {
 
 /* Cartão de Evento */
 .event-card {
-    background-color: #f9f9f9; /* Fundo mais suave */
+    background-color: #f9f9f9;
     border-radius: 10px;
-    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15); /* Sombra mais suave */
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
     overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
     width: 300px;
+    margin: 10px;
 }
 
 .event-card:hover {
@@ -57,28 +58,33 @@ header {
     width: 100%;
     height: 200px;
     object-fit: cover;
+    border-bottom: 4px solid #0078FF;
 }
 
 .event-card-content {
-    padding: 15px;
+    padding: 20px;
 }
 
 .event-card h2 {
-    font-size: 1.5em;
+    font-size: 1.4em;
     margin: 0 0 10px;
-    color: #0078FF; /* Azul vibrante */
+    color: #0078FF;
+    text-align: center;
 }
 
 .event-card p {
     font-size: 1em;
     margin: 0 0 15px;
-    color: #555; /* Cinza médio */
+    color: #555;
+    line-height: 1.5;
+    text-align: justify;
 }
 
 .event-card span {
     display: block;
     font-size: 0.9em;
-    color: #888; /* Cinza mais claro */
+    color: #888;
+    text-align: center;
 }
 
 /* Rodapé */
@@ -94,7 +100,7 @@ footer {
 .container-footer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
@@ -102,4 +108,71 @@ footer {
 
 .container-footer div {
     margin: 10px 0;
+}
+
+.container-footer a {
+    color: #333; /* Mudando a cor para cinza escuro, removendo o azul */
+    text-decoration: none;
+    margin: 5px 15px;
+    transition: color 0.3s;
+    display: inline-block; /* Garante que os links fiquem alinhados */
+}
+
+.container-footer a:hover {
+    color: #0078FF; /* Cor de destaque no hover */
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+    .event-card {
+        width: 280px;
+    }
+}
+
+@media (max-width: 992px) {
+    .events-container {
+        justify-content: space-between;
+    }
+
+    .event-card {
+        width: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .events-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .event-card {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 576px) {
+    header {
+        font-size: 1.2em;
+        padding: 10px;
+    }
+
+    .event-card {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    footer {
+        font-size: 0.9em;
+        padding: 10px 0;
+    }
+
+    .container-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-footer a {
+        margin: 5px 0;
+    }
 }
