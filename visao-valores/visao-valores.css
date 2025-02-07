@@ -1,92 +1,105 @@
-*{
-    padding: 0px;
-    margin: 0px;
-}
-
-/* Cor de fundo da página */
-html{
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     background-color: #ddd;
+    color: #333;
+    line-height: 1.6;
 }
 
-/* Barra de navegação */
+/* Cabeçalho */
+header {
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navbar */
 .Navbar {
-    /* position: fixed; */
-    top: 0;
-    width: 99.5%;
+
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 5px 0px 0px 5px;
-    background-color: rgba(255, 255, 255, 1); 
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color: white;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 100;
+
 }
 
+/* Links da Navbar */
 .Navbar__Items {
     display: flex;
-    gap: 25px;
-    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
-a{
+.Navbar__link a {
     color: #333;
-    font-size: 1rem;
+
+
     text-decoration: none;
-    font-weight: 600;
-    transition: color 0.3s ease;
-}
-
-.Navbar a:hover{
-    color: #0078FF;
-    text-decoration: none;
-}
-
-.Navbar img{
-    width: 110px;
-    height: 120px;
-}
-
-.Navbar a{
-    font-size: 18px;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
     font-weight: bold;
+    display: block;
 }
 
-.title-vv{
+.Navbar__link a:hover {
+    background-color: #00509e;
+    border-radius: 5px;
+    color: #fff;
+}
+
+/* Logo */
+#imgIPC img {
+    max-height: 80px;
+}
+
+/* Conteúdo Principal */
+main {
+    padding: 20px;
+}
+
+/* Seção Visão e Valores */
+.title-vv {
     font-size: 25px;
     text-align: center;
     margin: 15px;
 }
 
-.visao-item{
+.visao-item {
     text-align: justify;
-    display: grid;
-    grid-template-columns: 1fr;
-    place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.visao-item p{
-    width: 500px;
-    font-size: 20px;
+.visao-item p {
+    width: 90%;
+    max-width: 600px;
+    font-size: 18px;
     border: 2px solid #0078FF;
     border-radius: 5px;
     padding: 15px;
     background-color: rgb(230, 230, 230);
 }
 
-.container{
-    width: 1200px;
-    margin-left: 165px;
-    text-align: justify;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    place-items: center;
-    gap: 20px;
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
     text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+
 }
 
-.valores-item{
-    width: 300px;
-    height: 150px;
-    font-size: 20px;
+.valores-item {
+    font-size: 18px;
     border: 2px solid #0078FF;
     border-radius: 5px;
     padding: 15px;
@@ -94,99 +107,96 @@ a{
     align-items: center;
 }
 
-.valores-item h3{
-    font-size: 23px;
+.valores-item h3 {
+    font-size: 22px;
     padding-bottom: 10px;
 }
 
-/*Footer*/
+/* Rodapé */
 footer {
     background-color: rgba(192, 189, 189, 0.7);
-    color: rgb(73, 71, 71);
-    display: flex; 
-    justify-content: space-between; 
-    align-items: flex-start; 
-    padding: 20px 45px 0 45px;
-    flex-wrap: wrap; 
-    font-size: 1rem;
-    margin-top: 20px;
+    color: #333;
+    padding: 20px 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: center;
 }
 
-.container-footer{
+.container-footer {
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 100px ;
-    place-items: center;
-    margin-top: 20px;
+    justify-content: space-around;
+    align-items: flex-start;
 }
 
-.copyR p{
-    margin-bottom: 0px;
+.contato, .navegation-footer, .conteudo {
+    margin: 10px;
+}
+
+.contato h2 {
+    margin-bottom: 10px;
+}
+
+.contato a, .navegation-footer a, .conteudo a {
+    color: #0078FF;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+}
+
+.contato a:hover, .navegation-footer a:hover, .conteudo a:hover {
+    text-decoration: underline;
+    color: #0056b3;
 }
 
 .copyR {
-    text-align: center;
-    margin-top: 20px;
     width: 100%;
-    font-size: 0.9rem;
-    color: #3e3e3e;
-}
-
-.contato {
-    text-align: left;
-    flex: 1; 
-    margin-right: 15px;
-}
-
-.contato a:hover{
-    color: #0078FF;
-    transition: color 0.3s ease;
-}
-
-.contato a{
-    color: rgb(73, 71, 71);
-    text-decoration: none;
-}
-
-.contato p, h2, .face, .insta, .email{
-    margin-bottom: 8px;
-}
-
-.conteudo {
-    text-align: center; 
-    flex: 0.2;
-    margin-left: 15px;
-}
-
-.conteudo div { 
-    margin: 10px 10px;
-}
-
-.conteudo a{
-    text-decoration: none;
-    color: rgb(73, 71, 71);
-}
-
-.conteudo a:hover {
-    color: #0078FF;
-    transition: color 0.3s ease;
-}
-
-.navegation-footer{
     text-align: center;
+    margin-top: 10px;
 }
 
-.navegation-footer div{
-    margin: 10px 10px;
+.copyR p {
+    margin: 0;
 }
 
-.navegation-footer a{
-    text-decoration: none;
-    color: rgb(73, 71, 71);
+/* Responsividade */
+@media (max-width: 768px) {
+    .Navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Navbar__Items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .container-footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 }
 
-.navegation-footer a:hover{
-    color: #0078FF;
-    transition: color 0.3s ease;   
+@media (max-width: 500px) {
+    .title-vv {
+        font-size: 22px;
+    }
+    
+    .visao-item p {
+        font-size: 16px;
+        padding: 10px;
+    }
+    
+    .valores-item {
+        font-size: 16px;
+        padding: 10px;
+    }
 }
